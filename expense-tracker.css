@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  object-fit: cover;
+}
+
+/* GENERAL STYLE */
+h1 {
+  text-align: center;
+  padding: 32px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  border: 1px solid black;
+  width: 60%;
+  height: 500px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 32px;
+}
+
+label {
+  position: relative;
+}
+
+.empty-value-error {
+  font-size: 10px;
+  color: red;
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  width: 100%;
+  text-align: center;
+}
+
+/* FORM STYLE */
+.container form {
+  border: 1px solid black;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 16px;
+  border-radius: 8px;
+  background-color: lightgrey;
+}
+
+.container form input,
+select {
+  border: none;
+  outline: none;
+  padding: 5px;
+}
+
+.container form button {
+  padding: 5px 8px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+/* TABLE STYLES */
+.table-container {
+  /* overflow: auto; */
+  margin-top: 16px;
+}
+
+table {
+  border: 1px solid black;
+  table-layout: fixed;
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 32px;
+}
+
+thead th {
+  border: 1px solid black;
+}
+
+thead th:nth-child(3) {
+  width: 15%;
+  text-align: center;
+}
+
+thead th:nth-child(4) {
+  width: 5%;
+}
+
+tbody td:nth-child(3) {
+  text-align: right;
+}
+
+tbody tr {
+  border-bottom: 1px dashed black;
+  transition: all 0.15s ease;
+}
+
+tbody tr:hover {
+  background-color: lightgrey;
+}
+
+table th,
+td {
+  /* border: 1px solid black; */
+  padding: 8px;
+  text-align: left;
+}
+
+tbody input {
+  margin-right: 5px;
+}
+
+tbody tr img {
+  width: 15px;
+  cursor: pointer;
+  transform: translateY(2px);
+  margin-left: 5px;
+}
+
+tfoot td {
+  text-align: right;
+  font-weight: bold;
+  color: red;
+}
+
+tfoot th {
+  padding: 0;
+  color: red;
+  text-align: right;
+}
+
+tfoot td {
+  text-align: center;
+}
+
+@media only screen and (max-width: 1266px) {
+  body {
+    background-color: red;
+  }
+
+  .container {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 1066px) {
+  body {
+    background-color: green;
+  }
+
+  .container {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 740px) {
+  body {
+    background-color: blue;
+  }
+
+  .container {
+    padding: 5px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  body {
+    background-color: grey;
+  }
+  table thead th:nth-child(1) {
+    width: 25%;
+  }
+
+  table thead th:nth-child(2) {
+    width: 25%;
+  }
+}
+
+@media only screen and (max-width: 412px) {
+  body {
+    background-color: grey;
+  }
+  table thead th:nth-child(1) {
+    width: 25%;
+  }
+
+  table thead th:nth-child(2) {
+    width: 15%;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  html,
+  body {
+    background-color: lightblue;
+    overflow: auto;
+  }
+
+  .container {
+    min-width: 375px;
+  }
+}
